@@ -1,0 +1,186 @@
+//@import 'variable';
+//@import "grid";
+.container{
+    max-width: 1200px;
+    margin:  0 auto;
+    @include rs-xs{
+        max-width: 95%;
+    }
+    @include rs-md{
+        max-width: 94%;
+    }
+    @include rs-lg{
+        max-width: 80%;
+    }
+    @include rs-xl{
+        max-width: 65%;
+    }
+}
+body,html{
+    color: $gray;
+}
+*{
+    color: $gray;
+}
+
+header{
+    padding: 20px 0;
+    box-shadow:  0px 3px 2px -1px $gray;
+    .container{
+        position: relative;        
+        @include  rs-md{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #menu{
+            display: none;
+            &:checked{
+                ~nav{
+                    display: block;
+                }
+            }
+        }
+        .logo{
+            a{
+                color: $primary;
+                font-size: 30px;
+            }         
+        }
+        nav{
+          //  background: #333333;
+          @include rs-md{
+              display: block;
+              all: unset;
+          }
+            display: none;
+            padding: 30px 0;
+           > ul{
+               text-align: center;
+               @include rs-md{
+                   display: flex;
+               }
+                > li{ 
+                    padding: 8px 0;
+                    @include rs-md{
+                        margin-left: 20px;
+                    }
+                    >a{
+                        transition: all 0.4s ease-in-out;
+                        &.active{
+                            color: $text-active;
+                        }
+                        &:hover{
+                            color: $text-active;
+                        }
+                    }
+                    
+                    > ul.dropdown{
+                        display: none;
+                        padding: 8px 0;
+                        > li{
+                            padding: 8px 0;
+                            > a{
+                                display: block;
+                                padding: 6px 0;
+                                transition: all 0.4s;
+                                &:hover{
+                                    color: rgba($gray, 0.3);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        label.menu{
+            @include rs-md{
+                display: none;
+            }
+            position: absolute;
+            top: 0px;
+            right: 0;
+            padding: 8px;
+            border: 1px solid $gray;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover{
+                background: $text-active;
+                color: white;
+                border-color: $text-active ;
+            }
+        }
+    }   
+}
+.products{
+    padding: 40px 0;
+    .container{        
+        h2{
+            color: $primary;
+            font-size: 32px;
+            font-weight: normal;
+        }
+        p{
+            font-size: 20px;
+        }
+        .product-items{           
+            .row{           
+                align-items: center;
+                justify-content: center;       
+                .item{
+                   padding: 15px 15px;
+                   text-align: center;
+                   @include rs-md{
+                       padding: unset;
+                   }
+                   @include rs-lg{
+                       padding: unset;
+                   }
+                }  
+                img{
+                    max-width: 100%;
+                }             
+             }
+        }   
+    }
+}
+.info{
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/31-12-2018/organic_food-demo_Free/1671851217/web/images/bg1.jpg)
+    no-repeat top center/cover;
+    padding: 50px 0px;
+    clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+    display: flex;
+    //justify-content: flex-end;
+    
+    .container{
+        h2,a,p{
+            color: white;
+        }
+        h2{
+            margin-top: 50px;
+            font-size: 32px;
+            margin-bottom: 50px;
+            position: relative;
+            &::after{
+                content: "";
+                bottom: 0;
+                left: 0;
+                width: 100px;
+                height: 2px;
+                background: white;
+                position: absolute;
+            }               
+        }
+        p{
+            margin-bottom: 50px;
+        }
+        a  {
+            display: inline-block;
+            background: $text-active;
+            padding: 8px 15px;
+            border-radius: 3px;
+            margin-bottom: 50px;
+        } 
+    }
+}

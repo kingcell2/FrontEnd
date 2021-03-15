@@ -1,0 +1,101 @@
+header{
+    max-width: 700px;
+    padding: 20px;
+    background-color: #111111;
+    color: white;
+    h2{
+        border-bottom: 1px solid rgb(122, 122, 122);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .about{
+        width: 60%;
+        margin-right: 20px;
+      //  padding: 0px 20px;
+      p{
+          color: rgb(122, 122, 122);
+      }
+    }
+    .quick{
+        width: 40%;
+        ul{
+            li{
+                padding-bottom: 10px;
+                a{
+                    color: rgb(122, 122, 122);
+                }
+            }
+        }
+    }
+}
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.gray{
+    background: gray;
+}
+.title{
+  //  margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.company{
+    padding: 50px 0px;
+    p{
+        font-size: 32px;
+    }
+}
+.header{
+    padding: 100px 0px;
+    margin-top: 20px;
+    p{
+        font-size: 32px;
+    }
+}
+.navication{
+    margin-top: 20px;
+    p{
+        font-size: 32px;
+    }
+    nav{
+        ul{
+            li{
+                width: 22%;
+                height: 50px;
+            }
+        }
+    }
+}
+.about-quick{
+    margin-top: 20px;
+    .about{
+        width: 56%;
+        height: 500px;
+
+    }
+    .quick{
+        margin-left: 4%;
+        width: 40%;
+        .quick-up{
+            height: 40%;
+            margin-bottom: 10%;
+        }
+        .quick-down{
+            height: 50%;
+        }
+    }
+    p{
+        font-size: 32px;
+    }
+}
+.site{
+    margin-top: 20px;
+    padding: 80px;
+    p{
+        font-size: 32px;
+    }
+    margin-bottom: 20px;
+}

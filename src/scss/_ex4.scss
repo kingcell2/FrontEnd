@@ -1,0 +1,109 @@
+header{
+    padding: 20px 5px;
+    h2{
+        margin-bottom: 20px;
+    }
+}
+.gray{
+    background-color: rgb(196, 191, 191);
+}
+.content{
+    width: 1550px;
+    padding: 20px 0px;
+    img{
+        max-width: 100%;
+    }
+    .react{
+        width: 33%;
+        .box{
+            border: 1px solid #a8a4a4;
+            background: rgb(233, 233, 224);
+            margin-left: 25px;
+            border-radius: 5px;
+            .title{
+                padding: 10px 20px;
+               p{
+                   background: rgb(101, 199, 101);                   
+                   border-radius: 20px;
+                   width: 30px;
+                   text-align: center;
+                   color: white;
+                   font-size: 12px;
+                   font-weight: bold;
+               }
+               &.titles{
+                   p{
+                    width: 45px;
+                   }
+                   
+               }
+            }
+            .desc{
+                padding: 10px;
+                h3{
+                    color: rgb(38, 98, 209);
+                    margin-bottom: 5px;
+                }
+                i{
+                    color: rgb(92, 89, 89);
+                }
+               p{
+                   margin-top: 15px;
+               }
+            }
+        }
+    }
+}
+.main{
+   padding: 50px 0px;
+
+    .content{
+        margin-top: 20px;
+        padding: 10px 10px;
+        width: 1300px;
+        .products{
+            padding: 0px 10px;
+            width: 17.2%;
+           
+            .description{   
+                img{
+                    max-width: 100%;
+                }             
+                //padding: 6px;
+                background: white;
+                .pro-name{
+                    padding: 0 5px;
+                    font-size: 15px;
+                    margin: 5px 0;
+                }
+                .price{
+                    padding: 0 5px;
+                    color: orangered;
+                    font-size: 20px;
+                }
+                .price-default{
+                    padding: 0 5px;
+                    font-size: 13px;
+                    margin-top: 5px;
+                    color: #777777;
+                    span{
+                        text-decoration: underline;
+                    }
+                }
+                .stars{
+                    padding: 0 5px 10px 5px;
+                    margin-top: 5px;
+                    font-size: 12px;
+                    color: #777777;
+                    i{
+                        color: orange;
+                    }
+                    .place{
+                        margin-left: auto;
+                    }
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+ @import "media";
+ img{
+    max-width: 100%;
+}
+.container{
+    margin: auto;
+    @include rs-xs{
+        max-width: calc(98% -16px);
+    }
+    @include rs-xl{
+        max-width: 1200px
+    }
+}
+
+// @mixin - @include
+
+// dung min trong truong hop design theo kieu mobile first
+            // .d-md-block{
+            //     @include rs-md{
+            //         display: block;
+            //     }
+            // }
+            // .d-xs-block{
+            //     @include rs-xs{
+            //         display: block;
+            //     }
+            // }
+            // .d-sm-none{
+            //     @include rs-sm{
+            //         display: none;
+            //     }
+            // }
+header{
+  
+    background: #333333;
+    padding: 20px ;
+    a{
+        color: white;
+    }
+    nav{
+        @include  rs-xs{
+            transition: all 0.3s;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 300px;
+            z-index: 99;
+            background: rgba($color: #333333, $alpha: 0.3);
+            height: 100vh;
+            &:hover{
+                right: 0;
+            }
+        }
+        @include  rs-sm{
+            transition: all 0.3s;
+            position: unset;
+            top: 0;
+            right: -100%;
+            width: unset;
+            z-index: 99;
+            background: none;
+            height: unset;
+           
+        }
+        ul{
+            display: flex;
+            @include rs-xs{
+                flex-direction: column;
+            }
+            @include rs-sm{
+                flex-direction: row;
+            }
+            li{
+                @include rs-xs{
+                // margin-left: 20px;
+                }
+                @include rs-sm{
+                    background: unset;
+                   }
+                background: red;
+                padding: 20px ;
+                @include rs-sm{
+                    padding: 10px ;
+                }
+                text-align: center;
+                transition: all 0.4s;
+                &:hover{
+                    color: red;
+                    background: #333333;
+                }
+            }
+        }     
+    }
+    .menu{
+        &:hover{
+           ~nav{
+            right: 0;
+           } 
+        }
+        @include rs-xs{
+            display: block;
+        }
+        @include rs-sm{
+            display: none;
+        }
+        display: none;
+        width: 30px;
+        position: absolute;
+        right: 20px;
+        span{
+            display: block;
+            height: 3px;
+            background: white;
+            margin-bottom: 3px;
+        }
+    }
+}

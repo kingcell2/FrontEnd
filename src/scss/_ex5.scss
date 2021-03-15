@@ -1,0 +1,451 @@
+header{
+    background: #0D1326;    
+    padding: 14px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 17px;
+    ul{
+        li{
+            a{
+                padding: 0 15px;
+                i{
+                  padding: 0 12px;
+                }
+                &:hover{
+                    color: whitesmoke;
+                }
+                transition: all 0.5s;
+            }
+
+        }
+    }
+}
+.blue{
+    color: rgb(61, 61, 206);
+}
+.gray{
+    color: gray;
+}
+.white{
+    color: whitesmoke;
+}
+.pink{
+    color: indianred;
+}
+.menu{  
+    background-color: #ffa22d;
+    padding: 12px 0px;
+    margin-top: 48px;
+    .container{
+        .content{     
+            .shotpic{              
+                p{
+                    width: 28px;
+                    height: 4px;
+                    background-color: rgb(0, 0, 0);
+                    margin-top: 5px;  
+                    cursor: pointer;      
+                    transition: all 0.5s;                                                   
+                }       
+                &:hover{
+                    p{
+                        &:nth-child(1){
+                            width: 30%;
+                            transition: all 0.5s;
+                        }
+                        &:nth-child(2){
+                            width: 60%;
+                            transition: all 0.5s;
+                        }
+                    }
+                } 
+            }
+            .title{
+                h3{
+                    //margin-left: 20px;
+                    a{
+                        margin-left: 20px;
+                        font-size: 30px;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .icons{
+            cursor: pointer;
+           i{
+               padding: 0 10px;
+               transition: all 0.5s;
+               &:hover{
+                   color: white;
+               }
+           }
+        }
+    }
+ 
+}
+.banner{
+    height: 100vh;
+    background: url(https://demo.w3layouts.com/demosWTR/Freedom/20-02-2020/shot_pic-freedom-demo_Free/2131706274/web/assets/images/banner.jpg)
+    no-repeat center top/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    &::before{
+        content: "";
+        width: 100%;
+        position: absolute;
+        background: #17171a;
+        top: 0;
+        bottom: 0;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    .content{
+         color: white;
+             h1{
+                 width: 400px;
+                 font-size: 75px;
+                 margin-bottom: 20px;
+
+             }
+             p{
+                 width: 600px;
+                 margin-bottom: 40px;       
+                 font-size: 19px;   
+                 line-height: 30px; 
+             }
+             button{
+                 color: white;
+                 background-color: transparent;
+                 padding: 12px 25px;
+                 border: none;
+                 border: 1px solid white;
+                 font-size: 15px;
+                 border-radius: 5px;
+                 &:hover{
+                     background-color: #ffa22d;
+                     border: 1px solid #ffa22d;
+                 }
+                 transition: all 0.5s;
+             }
+     }
+}
+.container{
+    width: 1120px;
+    margin: 0 auto;
+}
+.about{
+    .container{
+        .title{
+            margin-top: 60px;
+         h3{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             margin-bottom: 20px;
+             font-size: 55px;
+         }
+         p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #777777;
+        }
+        }
+    }
+    .content{
+        flex-wrap: wrap;
+        display: flex;
+        .col{
+            width: 33%;   
+           // margin-left: 20px;
+            img{
+                width: 100%;
+                padding: 0 30px;
+            }
+            &.text{
+               
+                h3{
+                    font-size: 28px;
+                    margin-top: 60px;
+                    color: #424242;
+                    margin-bottom: 20px;
+                    margin-left: 30px;
+                              
+                }
+                p{
+                    color: #777777;
+                    font-size: 18px;
+                    margin-left: 30px;
+                    width: 80%;
+                }
+                button{
+                    margin-left: 30px;
+                    border: 2px solid #ffa22d;
+                    color: #ffa22d;
+                    padding: 12px 25px;
+                    background-color: transparent;
+                    border-radius: 5px;
+                    font-size: 17px;
+                    margin-top: 40px;
+                    transition: all 0.5s;         
+                    &:hover{
+                        background: #ffa22d;
+                        color: white;
+                    }
+                }
+            }
+            
+            &.col-1{
+                width: 30%;
+                margin-top: 35px;
+                border: 1px solid #c2bdbd;
+                padding: 15px ;
+                margin-left: 30px;
+                h4{
+                    font-size: 28px;
+                    color: #3d3d3d;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: #ffa22d;
+                    }
+                }
+                p{
+                    color: #777777;
+                    margin-top: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+.banner-car{
+    background: url(https://demo.w3layouts.com/demosWTR/Freedom/20-02-2020/shot_pic-freedom-demo_Free/2131706274/web/assets/images/bb3.jpg) 
+    no-repeat center/cover;
+    background-attachment: fixed;
+    margin-top: 50px;
+    padding: 50px 0;
+    .content{
+        background-color: white;
+        max-width: 650px;
+        padding: 50px;
+        margin-left: 50px;
+        h3{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .col{
+            width: 100%;
+            &.images{
+                width: 30%;
+                img{
+                    width: 100%;
+                    padding: 10px 10px 10px 0;
+                }
+            }
+            &.text{
+                width: 70%;               
+                h4{
+                    margin-top: 20px;
+                    margin-left: 30px;
+                    font-size: 23px;
+                    line-height: 25px;
+                    color: #333333;
+                }
+                p{
+                    margin-top: 10px;
+                    margin-left: 30px;
+                    line-height: 22px;
+                    color: #777777;
+                    font-size: 17px;
+                }
+            }
+           
+        }
+        
+    }
+}
+.banner-flower{
+    background: url(https://demo.w3layouts.com/demosWTR/Freedom/20-02-2020/shot_pic-freedom-demo_Free/2131706274/web/assets/images/bb2.jpg) 
+    no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .content{
+        max-width: 650px;
+        background-color: white;
+        padding: 50px;
+       margin: 70px 0;
+        h3{
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        p{
+            color: #777777;
+            margin-bottom: 30px;
+            font-size: 17px;
+            line-height: 25px;
+        }
+        button{
+          
+                 background-color: transparent;
+                 padding: 12px 25px;
+                 border: none;
+                 border: 1px solid #ffa22d;
+                 font-size: 15px;
+                 border-radius: 5px;
+                 color: #ffa22d;
+                 transition: all 0.5s;
+                 &:hover {
+                    background: #ffa22d;
+                    color: white;
+                }
+        }
+    }
+}
+.banner-girl{
+    background-attachment: fixed;
+    background: url(https://demo.w3layouts.com/demosWTR/Freedom/20-02-2020/shot_pic-freedom-demo_Free/2131706274/web/assets/images/cc4.jpg) no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .content{
+        background: white;
+        max-width: 650px;
+       // margin-right: 150px;
+        padding: 50px ;
+        //margin-top: 50px;
+        margin: 50px 150px 50px 50px;
+        h3{
+            font-size: 30px;
+            margin-bottom: 30px;
+            width: 80%;
+        }
+        p{
+            font-size: 17px;
+            line-height: 25px;
+            color: #777777;
+        }
+    }
+}
+.banner-mega{  
+    padding: 70px 0;
+    .container{
+        .col{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+            h3{
+                font-size: 27px;
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+            p{
+                color: #777777;
+                margin-bottom: 30px;
+                font-size: 18px;
+                width: 90%;
+                line-height: 25px;
+            }
+            ul{
+                li{ 
+                    color: #777777;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+footer{
+    background: #111111;
+    padding: 80px 0px;
+    .col{
+        width: 25%;
+        border-right: 1px solid gray;
+     &.cols{
+         border-right: none;
+     }
+       h3{
+           margin-bottom: 20px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           color: white;
+       }
+       p{
+           color: gray;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           text-align: center;
+       }
+       a{
+           color: gray;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           &:hover{
+               color: #ffa22d;
+           }
+       }
+    }
+  .contact{
+    margin-top: 50px;
+    border-top: 1px solid gray;
+
+    ul{
+        margin-top: 20px;
+        li{
+            //cursor: pointer;
+            padding-left: 20px;
+            color: gray;
+            a{
+                color: gray;
+            }
+            span:hover{
+                text-decoration: underline;
+            }
+            i:hover.fa-facebook{
+                cursor: pointer;
+                color: rgb(67, 69, 133);
+            }
+            i:hover.fa-instagram{
+                cursor: pointer;
+                color: rgb(139, 78, 78);
+            }
+        }
+    }
+  }
+  .move-top {
+    position: fixed;
+    right: 24px;
+    bottom: 50px;
+    background: #ffa22d;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    line-height: 35px;
+    z-index: 1;
+}
+}

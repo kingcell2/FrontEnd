@@ -1,0 +1,52 @@
+header{
+    border-bottom: 1px solid #333333;
+    img{
+       width: 100px;
+    }
+    p{
+        font-size: 22px;
+    }
+    nav{
+        ul{
+            li{
+                margin-left: 20px;
+                font-size: 22px;
+            }
+            li.active{
+                padding: 15px;
+                background: #4d4b4b;
+                color: white;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+.geometry{
+    .square{
+        height: 200px;
+        width: 200px;
+    }
+    .rectangle{
+        height: 260px;
+        width: 200px;
+    }
+    .square-2{
+        height: 240px;
+        width: 240px;
+    }
+    .blue{
+        background: rgb(61, 102, 235);
+    }
+    .red{
+        background: rgb(255, 0, 0);
+    }
+    .green{
+        background: rgb(90, 190, 90);
+    }
+}
+.end{
+    justify-content: flex-end;
+}
+.ml-150{
+    margin-left: 150px;
+}
